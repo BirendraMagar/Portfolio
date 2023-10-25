@@ -31,13 +31,13 @@ const Intro = () => {
             }}
           >
             <Image
-              src="/a.jpg"
+              src="/who.jpg"
               alt="Profile"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -63,9 +63,10 @@ const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Birendra Magar.</span> I'm a{" "}
-        <span className="font-bold">front-end developer</span> with{" "}
-        <span className="font-bold">1/2 year</span> of experience. I enjoy
-        building <span className="italic">sites</span>. My focus is{" "}
+        <span className="font-bold">front-end developer.</span>
+        {/* with{" "}
+        <span className="font-bold">1/2 year</span> of experience. */}{" "}
+        I enjoy building <span className="italic">sites</span>. My focus is{" "}
         <span className="underline">React(Next.js)</span>.
       </motion.h1>
 
@@ -80,10 +81,10 @@ const Intro = () => {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
+          // onClick={() => {
+          //   setActiveSection("Contact");
+          //   setTimeOfLastClick(Date.now());
+          // }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
